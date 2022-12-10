@@ -1,0 +1,23 @@
+/* This is injected after a web page loads */
+
+#cursor {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100000;
+  pointer-events: none;
+  /* Cursor circle invert effect */
+  backdrop-filter: invert(100%) contrast(100%);
+  transition: scale 0.3s;
+}
+
+/* Larger size for link and button hover */
+#cursor.big {
+  scale: 1.5;
+}
+
+/* Entering iframes */
+#cursor.hidden {
+  scale: 0;
+}
